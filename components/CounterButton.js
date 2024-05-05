@@ -1,8 +1,9 @@
 import React from 'react';
 
-function CounterButton() {
-     /*DO NOT EDIT THIS LINE */ console.log("CounterButton rendered!"); //DO NOT edit this line 
- return <button onClick={increment}>Increment</button>;
+function CounterButton({ increment }) {
+    console.log("CounterButton rendered!");
+
+    return <button onClick={increment}>Increment</button>;
 }
 
 export default React.memo(CounterButton);
